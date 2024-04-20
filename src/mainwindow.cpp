@@ -118,6 +118,7 @@ int MainWindow::LoadPlugins(){
                     ui->LeadTreeStack->setCurrentIndex(idx);
                 });
             }
+            else ui->LeadTreeStack->hide();
             if(nullptr != interface->GetManager()->user_window){
                 int idx = ui->user_stacked->addWidget(interface->GetManager()->user_window);
                 QObject::connect(interface->GetManager()->side_btn,&QToolButton::clicked,[this,idx](){

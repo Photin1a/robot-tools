@@ -27,3 +27,19 @@ static void LogError(QPlainTextEdit *log, const QString &msg);
 // ToolFunc::Log(log_, "CarmeraCalibration", "blue");
 // ToolFunc::Log(log_, "CarmeraCalibration");
 ```
+
+
+QMenu::item{
+background-color: rgb(62, 61, 57);
+color: rgb(204, 204, 204);
+}
+QMenu{
+background-color: rgb(62, 61, 57);
+color: rgb(204, 204, 204);
+}
+QMenu::selected{
+background:rgba(82,130,164,1);border:1px solid rgba(82,130,164,1);
+}
+QMenu::item:selected{
+background:rgba(82,130,164,1);border:1px solid rgba(82,130,164,1);
+}

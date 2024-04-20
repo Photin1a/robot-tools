@@ -37,149 +37,6 @@
      <number>0</number>
     </property>
     <item row="0" column="1">
-     <widget class="QSplitter" name="HSpliiter">
-      <property name="styleSheet">
-       <string notr="true">QSplitter::handle {
-    /*background-color: #808080;  设置分隔线的背景色 */
-}
-
-QSplitter::handle:hover {
-    background-color: #4671f1; /* 设置鼠标悬停时的背景色 */
-}
-</string>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="handleWidth">
-       <number>1</number>
-      </property>
-      <widget class="QStackedWidget" name="LeadTreeStack">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: #252526;</string>
-       </property>
-       <widget class="QWidget" name="lead_default"/>
-      </widget>
-      <widget class="QSplitter" name="VSpliiter">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-         <horstretch>1</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QSplitter::handle {
-    background-color: #393939; /* 设置分隔线的背景色 */
-}
-
-QSplitter::handle:hover {
-    background-color: #4671f1; /* 设置鼠标悬停时的背景色 */
-}
-</string>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="opaqueResize">
-        <bool>false</bool>
-       </property>
-       <property name="handleWidth">
-        <number>1</number>
-       </property>
-       <widget class="QStackedWidget" name="user_stacked">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>1</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>300</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: #1e1e1e;</string>
-        </property>
-        <widget class="QWidget" name="user_default"/>
-       </widget>
-       <widget class="QTabWidget" name="Tab">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QTabWidget {
-    border: none; /* 去除QTabWidget的边框 */
-}
-
-QTabWidget::pane {
-    border: none; /* 去除QTabWidget的内容区域边框 */
-}
-
-
-QTabBar::tab {
-    min-width: 35px; /* 设置标签宽度 */
-	background-color: #1e1e1e;
-}
-
-QTabBar::tab-bar {
-    min-width: 35px; /* 设置标签宽度 */
-}
-
-QTabBar::tab:!selected {
-	color: #808080;
-}
-
-QTabBar::tab:selected {
-	color: #ffffff;
-}
-
-QTabBar::tab:hover {
-	color: #ffffff;
-}
-
-
-</string>
-        </property>
-        <property name="tabShape">
-         <enum>QTabWidget::Rounded</enum>
-        </property>
-        <property name="currentIndex">
-         <number>-1</number>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>16</width>
-          <height>16</height>
-         </size>
-        </property>
-        <property name="elideMode">
-         <enum>Qt::ElideNone</enum>
-        </property>
-        <property name="movable">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </widget>
-     </widget>
-    </item>
-    <item row="0" column="0">
      <widget class="QWidget" name="SideBar" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
@@ -353,6 +210,149 @@ QPushButton:default {
       </layout>
      </widget>
     </item>
+    <item row="0" column="0">
+     <widget class="QSplitter" name="HSpliiter">
+      <property name="styleSheet">
+       <string notr="true">QSplitter::handle {
+    /*background-color: #808080;  设置分隔线的背景色 */
+}
+
+QSplitter::handle:hover {
+    background-color: #4671f1; /* 设置鼠标悬停时的背景色 */
+}
+</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="handleWidth">
+       <number>1</number>
+      </property>
+      <widget class="QStackedWidget" name="LeadTreeStack">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #252526;</string>
+       </property>
+       <widget class="QWidget" name="lead_default"/>
+      </widget>
+      <widget class="QSplitter" name="VSpliiter">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>1</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QSplitter::handle {
+    background-color: #393939; /* 设置分隔线的背景色 */
+}
+
+QSplitter::handle:hover {
+    background-color: #4671f1; /* 设置鼠标悬停时的背景色 */
+}
+</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="opaqueResize">
+        <bool>false</bool>
+       </property>
+       <property name="handleWidth">
+        <number>1</number>
+       </property>
+       <widget class="QStackedWidget" name="user_stacked">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #1e1e1e;</string>
+        </property>
+        <widget class="QWidget" name="user_default"/>
+       </widget>
+       <widget class="QTabWidget" name="Tab">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTabWidget {
+    border: none; /* 去除QTabWidget的边框 */
+}
+
+QTabWidget::pane {
+    border: none; /* 去除QTabWidget的内容区域边框 */
+}
+
+
+QTabBar::tab {
+    min-width: 35px; /* 设置标签宽度 */
+	background-color: #1e1e1e;
+}
+
+QTabBar::tab-bar {
+    min-width: 35px; /* 设置标签宽度 */
+}
+
+QTabBar::tab:!selected {
+	color: #808080;
+}
+
+QTabBar::tab:selected {
+	color: #ffffff;
+}
+
+QTabBar::tab:hover {
+	color: #ffffff;
+}
+
+
+</string>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="elideMode">
+         <enum>Qt::ElideNone</enum>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -366,10 +366,22 @@ QPushButton:default {
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(62, 61, 57);
+    <string notr="true">        QMenuBar {
+background-color: rgb(62, 61, 57);
 color: rgb(204, 204, 204);
+        }
+        QMenuBar::item {
+background-color: rgb(62, 61, 57);
+color: rgb(204, 204, 204);
+        }
 
-
+        QMenu::item {
+background-color: rgb(62, 61, 57);
+color: rgb(204, 204, 204);
+        }
+        QMenu::item:selected {
+            background-color: #555;
+        }
 </string>
    </property>
    <widget class="QMenu" name="menuFile">

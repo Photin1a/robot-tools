@@ -15,9 +15,9 @@ CarmeraCalibration::CarmeraCalibration(QObject *parent)
     user_ui_->image->addWidget(images_view_);
 
     //leadtree
-    ui_manager_->leadtree = new QWidget();
+    // ui_manager_->leadtree = new QWidget();
     leadtree_ui_ = new Ui::CarmeraCalibrationLeadTree();
-    leadtree_ui_->setupUi(ui_manager_->leadtree);
+    // leadtree_ui_->setupUi(ui_manager_->leadtree);
 
     //state label
     ui_manager_->state_idxs = {{"Cam",new QLabel("Cam")},{"Cal",new QLabel("Cal")}};
