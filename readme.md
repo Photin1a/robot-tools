@@ -1,5 +1,6 @@
 # Navigation tool Frame
-
+## 这是一个纯插件化的可视化frame，基于Qt5开发，使用必须继承插件接口基类。
+![](./resources/3.gif)
 
 ## How to use it!
 
